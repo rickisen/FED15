@@ -1,0 +1,16 @@
+body {
+		background-color:black;
+}
+
+#main {
+		background-color:white;
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+}
+
+
+#header {
+		display:inline-block;
+
+}
