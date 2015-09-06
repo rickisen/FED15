@@ -1,9 +1,11 @@
-body { 
-	font-family:serif;
-	width:572;
+#main {
+		width:600 ;
+		margin-left:auto;
+		margin-right:auto;
 }
 
-/* Header --------------------------- */
+
+/* header --------------------------- */
 #header {
 	border-top-style:solid;
 	border-top-color:#aaaaaa;
@@ -11,60 +13,72 @@ body {
 	margin-bottom:30px;
 }
 
-#headPart1 {
+/* Left part */
+#headLeft {
 	display:inline-block;
 	vertical-align:top;
 }
 
-#headPart1 div{ display:inline-block; }
+#headLeft img { vertical-align:middle; }
 
 .button {
 	background-color:rgb(255,210,50);
+
 	border-style:solid;
 	border-top-color:rgb(255,255,50);
 	border-left-color:rgb(255,255,50);
 	border-right-color:rgb(200,150,40);
 	border-bottom-color:rgb(200,150,40);
-	color:darkred;
+	
+	display:inline-block;
 	padding: 0px 5px 0px 5px;
 	margin-top:10px;
 }
 
-.button a { color:black; }
+.button a { 
+	color:darkred;
+	text-decoration:none;
+ }
 
-#spacer { padding-right:70px; }
- 
+#button1 span { color:black; }
+
+#button2 { 
+	position:relative;
+	left:75px;
+}
+    
+/* middle part */
 #redhead {
 	vertical-align:top;
 	background-color:darkred;
 	width:20px;
-	height:100px;
-	margin-top:5px;
+	height:94px;
+	margin: 5px 0px 0px 5px;
 	display:inline-block;
 }
 
-#headPart2{
-	display:inline-block;
+/* right part */
+#headRight{
 	text-align:right;
 	margin: 5px 0px 0px 5px;
+	font-size:10px; 
+	display:inline-block;
 }
+#headRight p {margin-top:3px;}
 
-#headPart2 p { font-size:10px; }
 
-
-/* Section links --------------------- */
-#sectionLinkTable tr td {
+/* CONTENT AREA --------------------- */
+/* -- Section links - */
+.sectionLinkTable tr td {
 	vertical-align:top; 
 	padding-bottom:20px;
-}
-
-#sectionLinkTable tr td div {
 	text-align:left;
 	width:190px;
 	font-size:12px;
 }
 
-#sectionLinkTable tr td div a {
+.sectionLinkTable tr td a {
+	background-color:grey; /*placeholder*/
 	color:white;
 	border-radius:20px;
 	font-size:20px;
@@ -72,18 +86,14 @@ body {
 	text-decoration:none;
 }
 
-#sectionLinkTable tr td div p {
-		margin-top:2px;
-		font-size:12px;
-}
-
+.sectionLinkTable tr td div p { margin-top:5px; }
 #ftpSection a{ background-color:green; }
 #askSection a{ background-color:blue;  }
 #disSection a{ background-color:black; }
 
 
-/* Link table ------------------------ */
-#linkTable tr td {
+/* -- Link table */
+.linkTable tr td {
 	padding: 0px 12px 0px 12px;
 	text-align:center;
 }
@@ -96,4 +106,3 @@ body {
 	border-width:2px;
 	margin-top:40px;
 }
-
