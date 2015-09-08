@@ -1,23 +1,26 @@
 body {background-color:black;}
+.masterWidth  {width:600px;}
 
-.masterWidth		{width:600px;}
-.sideMargin   {margin:0px 15px 0px 15px; } 
-.bigTopMar    {margin-top:30px; } 
+
+/* General attributes */
+.sideMargin   {margin:0px 15px 0px 15px;} 
+.bigTopMar    {margin-top:30px;} 
 .inlineBlock  {display:inline-block;}
 .smallPrint   {font-size:10px;}
-.greenBotBor  {border-bottom:2px solid green; }
-.mediumPadding{padding:5px 0px 5px 50px; }
-.largePadding {padding:5px 0px 5px 75px; }
-.thirdHeight  {height:33.333333%; }
+.greenBotBor  {border-bottom:2px solid green;}
+.blackTopBor  {border-top:2px solid black;}
+.mediumPadding{padding:5px 0px 5px 50px;}
+.largePadding {padding:5px 0px 5px 75px;}
+.thirdHeight  {height:33.333333%;}
 .dropShadow   {box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);}
-.table								{display:table;}
-.tableRow					{display:table-row;}
-.tableCell				{display:table-cell;}
+.tableRow	  {display:table-row;}
+.tableCell	  {display:table-cell;}
 .toTheLeft    {position:relative;left:10px;}
-.toTheRight   {position:relative;right:8px;}
-.posRel							{position:relative;}
+.posRel		  {position:relative;}
 
-.toTheMiddle  {
+
+/* more advanced classes */
+.toTheMiddle {
 		position:relative;
 		margin-left:auto;
 		margin-right:auto;
@@ -49,9 +52,11 @@ body {background-color:black;}
 
 .yellowbox img {vertical-align:top;}
 
+
+/* specific Id's */
 #main {
 		background-color:white;
-		margin-top:70px;
+		margin:70px 0px 70px 0px ;
 }
 
 #title {
@@ -63,7 +68,7 @@ body {background-color:black;}
 		height:32px;
 }
 
-#headerTop{
+#topMenu{
 		border-radius: 10px 0px 0px 0px ;
 		background:linear-gradient(to right, #808080, #000000);
 		color:white;
@@ -71,7 +76,7 @@ body {background-color:black;}
 		padding-top:6px;
 }
 
-#headerTop a {
+#topMenu a {
 		text-decoration:none;
 		font-weight:bold;
 		font-size:12px;
@@ -87,17 +92,15 @@ body {background-color:black;}
 		background-color:green;
 		z-index:2;
 }
+
 #purple  {
 		background-color:purple;
 		z-index:1;
 }
+
 #brown  {
 		background-color:darkorange;
 		z-index:0;
-}
-
-#headerImage {
-		position:relative;
 }
 
 #allAbout {
@@ -107,13 +110,4 @@ body {background-color:black;}
 		position:absolute;
 		left:160px;
 		z-index:2;
-}
-
-#middle {
-		clear:both;
-		background-color:white;
-}
-
-#footer {
-		border-top:2px solid black;
 }
