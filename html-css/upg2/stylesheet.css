@@ -80,6 +80,8 @@ body {background-color:black;}
 		color:white;
 }
 
+#upperMiddle { }
+
 #colorBoxDiv {
 		height:202px;
 		width:344px;
@@ -103,11 +105,18 @@ body {background-color:black;}
 		z-index:0;
 }
 
+#headerImage {
+		position:relative;
+		display:inline-block;
+}
+
 #allAbout {
+		text-align:right;
+		padding:5px;
 		display:inline-block;
 		position:absolute;
-		left:-100px;
-		color:red;
+		left:160px;
+		z-index:2;
 }
 
 #middle {
