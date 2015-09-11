@@ -13,10 +13,11 @@ body {background-color:black;}
 .largePadding {padding:5px 0px 5px 75px;}
 .thirdHeight  {height:33.333333%;}
 .dropShadow   {box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);}
+.textShadow   {text-shadow: 0px 5px 10px #000000 ;}
 .tableRow	  {display:table-row;}
 .tableCell	  {display:table-cell;}
 .toTheLeft    {position:relative;left:10px;}
-.posRel		  {position:relative;}
+.posRel		  {position:relative;top:0px;}
 
 
 /* more advanced classes */
