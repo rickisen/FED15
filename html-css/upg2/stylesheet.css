@@ -14,9 +14,12 @@ body {background-color:black;}
 .thirdHeight  {height:33.333333%;}
 .dropShadow   {box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);}
 .textShadow   {text-shadow: 0px 5px 10px #000000 ;}
+.table        {display:table;}
 .tableRow	  {display:table-row;}
 .tableCell	  {display:table-cell;}
 .toTheLeft    {position:relative;left:10px;}
+.floatRight   {float:right;}
+.overflow     {overflow:auto;}
 .posRel		  {position:relative;top:0px;}
 
 
@@ -86,7 +89,6 @@ body {background-color:black;}
 
 #colorBoxDiv {
 		height:202px;
-		width:100%;
 }
 
 #green  {
@@ -106,9 +108,10 @@ body {background-color:black;}
 
 #allAbout {
 		text-align:right;
-		padding:5px;
 		display:inline-block;
 		position:absolute;
-		left:160px;
-		z-index:2;
+		width:50px;
+		right:5px;
+		top:0px;
+		z-index:4;
 }
