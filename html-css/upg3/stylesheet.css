@@ -1,0 +1,39 @@
+/* stylesheet.css */
+#wrapper {}
+
+.header {}
+
+.picture {}
+
+.redBoxContainer { 
+	border:1px solid black;
+}
+
+.redBox {
+	background-color:red;
+}
+
+.bigGreenBox{
+	background-color:green;
+}
+
+
+.darkGreenBoxContainer{ 
+	border:1px solid black;
+}
+
+.darkGreenBox{
+	background-color:darkgreen;
+}
+
+.brownLimeContainer{
+	border:1px solid black;
+}
+
+.brownBox{
+	background-color:brown;
+}
+
+.limeBox{
+	background-color:lime;
+}
