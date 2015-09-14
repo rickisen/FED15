@@ -4,23 +4,23 @@ body {background-color:black;}
 
 /* General attributes */
 .sideMargin   {margin:0px 15px 0px 15px;} 
-.bigTopMar    {margin-top:30px;} 
 .inlineBlock  {display:inline-block;}
 .smallPrint   {font-size:10px;}
-.greenBotBor  {border-bottom:2px solid green;}
+.greenBotBor  {border-bottom:1px solid green;}
 .blackTopBor  {border-top:2px solid black;}
 .mediumPadding{padding:5px 0px 5px 50px;}
 .largePadding {padding:5px 0px 5px 75px;}
 .thirdHeight  {height:33.333333%;}
 .dropShadow   {box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);}
-.textShadow   {text-shadow: 0px 5px 10px #000000 ;}
-.table        {display:table;}
-.tableRow	  {display:table-row;}
-.tableCell	  {display:table-cell;}
+.textShadow   {text-shadow: 2px 2px 7px #101000 ;}
 .toTheLeft    {position:relative;left:10px;}
 .floatRight   {float:right;}
 .overflow     {overflow:auto;}
 .posRel		  {position:relative;top:0px;}
+.blackGround  {background-color:black;}
+.whiteGround {background-color:white;}
+.z4           {z-index:4;}
+
 
 
 /* more advanced classes */
@@ -30,16 +30,8 @@ body {background-color:black;}
 		margin-right:auto;
 }
 
-.popOut {
-		position:fixed;
-		display:inline-block;
-		background-color:rgba(0,0,0,0.8);
-		top:0px;
-		z-index:3;
-}
-
 .yellowbox {
-		margin-top:10px;
+		margin-top:15px;
 		background-color:#ffc500;
 		color:purple;
 		font-weight:bold;
@@ -51,18 +43,12 @@ body {background-color:black;}
 		font-size:13;
 		width:65%;
 		display:inline-block;
-		vertical-align:top;
 }
 
 .yellowbox img {vertical-align:top;}
 
 
 /* specific Id's */
-#main {
-		background-color:white;
-		margin:70px 0px 70px 0px ;
-}
-
 #title {
 		color:#ffc500;
 		font-family:'Titillium Web', Sans;
@@ -74,10 +60,10 @@ body {background-color:black;}
 
 #topMenu{
 		border-radius: 10px 0px 0px 0px ;
-		background:linear-gradient(to right, #808080, #000000);
-		color:white;
-		height:30px;
 		padding-top:6px;
+		background:linear-gradient(to right, #808080, #000000);
+		height:30px;
+		color:white;
 }
 
 #topMenu a {
@@ -112,6 +98,6 @@ body {background-color:black;}
 		position:absolute;
 		width:50px;
 		right:5px;
-		top:0px;
+		top:0px; /* needed for chrome for some reason */
 		z-index:4;
 }
