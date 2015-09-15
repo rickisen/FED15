@@ -1,39 +1,122 @@
-/* stylesheet.css */
-#wrapper {}
+/* stylesheet.css 
+ * 
+ * För firefox kompabilitet 
+ * måste det vara "min-height"
+ * istället för "height", 
+ * annars overflowar ej
+ *
+ * */
 
-.header {}
+.header * {
+	overflow:hidden;
+}
 
-.picture {}
+
+.brownLimeContainer * {
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+}
+
+
+#wrapper {
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:column;
+
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+
+	border:2px solid black;
+}
+
+.header {
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:row;
+
+	margin-bottom:20px;
+	border-bottom:1px solid black;
+}
+
+.picture {
+	border:2px solid black;
+	/*display:flex; /* ibland stretchar typ 10%*/
+}
 
 .redBoxContainer { 
-	border:1px solid black;
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:column;
+	flex:1;
+
 }
 
 .redBox {
+	flex:1;
+	min-height:1px;
+
 	background-color:red;
+	border:2px solid black;
 }
 
 .bigGreenBox{
-	background-color:green;
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:column;
+	flex:4;
+	min-height:1px;
+
 }
 
-
 .darkGreenBoxContainer{ 
-	border:1px solid black;
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:row;
+	flex:1;
+	min-height:1px;
 }
 
 .darkGreenBox{
+	flex:1;
+	min-width:1px;
+
 	background-color:darkgreen;
+	border:2px solid black;
 }
 
 .brownLimeContainer{
-	border:1px solid black;
+	display:-webkit-flex;
+	display:flex;
+	flex-direction:row;
+	flex:1;
+	min-height:1px;
 }
 
+/*
+.brownLimeContainer .ng-binding {
+				min-height:10px;
+}
+*/
+
 .brownBox{
+	flex-basis:200px;
+	min-height:1px;
+
 	background-color:brown;
+	border:2px solid black;
 }
 
 .limeBox{
+	flex:1;
+	min-height:1px;
+
 	background-color:lime;
+	border:2px solid black;
 }
+
+.article {
+	padding:5px;
+	border:1px solid black;
+}
+

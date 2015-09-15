@@ -1,84 +1,39 @@
 <!DOCTYPE html>
 <html ng-app="homework">
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
+
 <body ng-controller="HomeworkController">
-<div id="wrapper">
-<div class="header">
-	<div class="picture">
-		<!-- Bild DYNAMISK VAL: -->
-		<img style="display:block;" ng-src="{{pic}}">
-		<!-- Bild STATISKT VAL: -->
-		<!--
-		<img style="display:block;" src="http://globalgamejam.org/sites/default/files/styles/game_sidebar__normal/public/game/featured_image/promo_5.png">
-		-->
+	<div id="wrapper">
+		<div class="header">
+			<div class="picture">
+				<img style="display:block;" ng-src="{{pic}}">
+			</div>
+		
+			<div class="redBoxContainer">
+				<div class="redBox" ng-repeat="redBox in redBoxes track by $index">{{redBox}}</div>
+			</div>
+		
+			<div class="bigGreenBox">
+							
+				<div class="darkGreenBoxContainer">
+					<div class="darkGreenBox" ng-repeat="darkGreenBox in darkGreenBoxes track by $index">{{darkGreenBox}}</div>
+				</div>
+		
+				<div class="brownLimeContainer">
+					<div class="brownBox">{{brownBox}}</div>
+					<div class="limeBox">{{limeBox}}</div>
+				</div>
+		
+			</div>
+		
+		</div>
+		
+		<div class="article" ng-repeat="article in articles track by $index">{{article}}</div>
 		
 	</div>
-	
-	<div class="redBoxContainer">
-	
-		<!-- redBox DYNAMISKT VAL: -->
-		<div class="redBox" ng-repeat="redBox in redBoxes track by $index">{{redBox}}</div>
-		<!-- redBox STATISKT VAL: -->
-		<!---
-		<div class="redBox">Bla bla bla bla bla</div>
-		<div class="redBox">Bla bla bla bla bla</div>
-		<div class="redBox">Bla bla bla bla bla</div>
-		-->
-	</div>
-	
-	<div class="bigGreenBox">
-		<div class="darkGreenBoxContainer">
-			<!-- darkGreenBox DYNAMISKT VAL:  -->
-			<div class="darkGreenBox" ng-repeat="darkGreenBox in darkGreenBoxes track by $index">{{darkGreenBox}}</div>
-			
-			<!--darkGreenBox STATISKT VAL: -->
-			<!--
-				<div class="darkGreenBox">Bla bla bla bla</div>
-				<div class="darkGreenBox">Bla bla bla bla bla bla bla bla bla bla bla</div>
-				<div class="darkGreenBox">Bla bla bla bla</div>
-				<div class="darkGreenBox">Bla bla bla bla bla bla bla </div>
-				<div class="darkGreenBox">Bla bla bla bla</div>
-			-->
-		</div>
-		<div class="brownLimeContainer">
-            <!-- brownBox DYNAMISKT VAL: -->
-			<div class="brownBox">{{brownBox}}</div>
-			
-			<!-- brownBox STATISKT VAL: -->
-			<!--
-			<div class="brownBox">Bla bla bla blab bla bla bla bla blab bla bla bla bla bla bla bla bla la bla bla bla</div>
-			-->
-			
-			<!-- limeBox DYNAMISKT VAL: -->			
-			<div class="limeBox">{{limeBox}}</div>
-			
-			<!-- limeBox STATISKT VAL:  -->
-			<!--
-			<div class="limeBox">Bla bla bla bla bla bla bla bla bla bla
-			bla bla bla bla bla bla bla bla bla bla bla bla bla
-			bla bla bla bla bla bla bla bla bla bla bla bla
-			bla bla bla bla bla bla bla bla bla</div> 
-			-->
-		</div>
-	</div>
-</div>
-
-<!-- article DYNAMISKT VAL: -->
-<div class="article" ng-repeat="article in articles track by $index">{{article}}</div>
-
-<!-- article STATISKT VAL: -->
-<!---
-<div class="article">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
-<div class="article">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
-<div class="article">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
-<div class="article">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
--->
-
-</div>
-<script src="homework.js"></script>
+	<script src="homework.js"></script>
 </body>
 </html>
