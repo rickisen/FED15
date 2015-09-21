@@ -1,0 +1,35 @@
+
+body {
+				font-size:12px;
+				font-family:sans;
+}
+
+h5 { font-weight:bolder }
+h6 { font-weight:bolder; }
+
+.greyBg {
+				background-color:lightgrey;
+				margin:10px;
+}
+
+.header {
+				margin-bottom:10px;
+}
+
+.inputHolder {
+				background-color:white;
+}
+
+.wrapper {
+				border:1px solid black;
+}
+
+.butt { width:15%; }
+
+@media all and (max-width:970px){
+				.butt { width:20%; }
+}
+
+@media all and (max-width:768px){
+				.butt { width:100%; }
+}
