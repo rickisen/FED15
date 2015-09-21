@@ -1,0 +1,41 @@
+/* stylesheet.css Lektion 6 */
+
+* {margin:2px;}
+
+.container {
+	display:-webkit-flex;
+	display:flex;
+	background-color:orange;
+	width:300px;
+	height:300px;
+	border: 1px solid red;
+
+	align-items:center;
+	justify-content:center;
+}
+
+.container1 			{ flex-direction:column; }
+.container1 .item { flex-direction:row; }
+
+.container2 			{ flex-direction:row; }
+.container2 .item { flex-direction:column; }
+
+.container3 			{ flex-direction:row; }
+
+.item {
+	border:1px solid white;
+	background-color:blue;
+	display:flex;
+}
+
+.subitem {
+				background-color:red;
+				border:1px solid white;
+				width:30px;
+				height:30px;
+}
+
+.subitem:nth-child(2) {
+				height:40px;
+}
+

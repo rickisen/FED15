@@ -1,0 +1,19 @@
+boot strap ska in i en container
+	container
+		row
+
+container-fluid täcker hela sidan "med bootstrap"
+
+
+
+// på en LG device tar den upp 6 collumner, dvs halva sidan
+<div class=".col-lg-6"></div>
+
+
+
+devices:
+	XS = typ mobil, liten device 	< 750px
+	SM = typ tablet 		> 750px
+	MD = medium stor 		> 970px
+	LG = dator 			> 1170px
+

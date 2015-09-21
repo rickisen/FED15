@@ -1,0 +1,25 @@
+elector efter attribut
+
+<input type="text">
+	css: 
+		input[type=text] // alla inputs som har type text
+		input[type]      // alla input som har en type
+		[type=text]	 // alla element som har type text
+		[type]		 // alla element som har en type
+
+
+	<div x="hej hus asd kool">
+		div[keyx~=hus] 	// matchar alla divs vars attrbut fält innehåller hus (mellanrum separerat)
+		div[key^=hej] 	// matchar alla divs med attribut som börjar med hej. 
+		div[key$=hej]	// matchar alla divs med attribut som slutar med hej
+		div[key*=hej]   // matchar alla divs med attribut som innehåller bokstavsföljden hej (ingen sepeerator)
+
+	css:
+		div > span {} 	      // bara direkta barn av div
+		div span {}   	      // alla span som är barn av divs kan vara barnbarn 
+		li:first-child        // första barnet av li
+		li:last-child         // sista barnet av li
+		li:nth-child(3)	      // tredje barnet
+
+	Flexbox
+		display:flex

@@ -1,0 +1,24 @@
+felxbox
+	
+	display:flex; 	// saker med detta kallas "en flexbox"
+			// Det finns då alltid en behållare (container), och items som ligger i. 
+
+	display:-webkit-flex; 	// för safari kompablitet skriv detta före. Fucking Apple!!
+
+	flex-direction: 		// vilket håll items lägger sig i "flexas i". 
+							row/row-reverse
+							column/column-reverse
+	align-itmes:			
+	justify-content:
+		flex-end
+		flex-start*
+		center
+		space-between
+		space-around
+
+	flexing		// gäller när det finns utrymme över i flexriktningen. 
+						// skriver över width t.ex men matten appliceras i fel ordning, 
+						// så det är säkast att srkiva width:1px; när man använder detta
+							
+						// för att lägga till nya rader, så items inte går utanför containern, 
+	flex-wrap	 // sätt containern till flex-wrap:wrap;. kan behöva -webkit-flex-wrap:wrap;

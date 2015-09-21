@@ -1,0 +1,38 @@
+specificity
+	mått för hur specifikt en selctor i css är
+	specificity.keegan.st
+exempel
+	<p style="color:red;">test text</p> 			// inline är starkast, men styrkan försvinner ganska snabbt med arv. för det är svagt
+	#id-name{color:blue;} 					// css id
+	.class.moreclass{color:blue;} 				// dubbel class
+	.class{color:blue;} 					// class
+	ärvda egenskaper					// har lägre prioritet and specierade style id och classer
+	------ ?
+	*{color:blue;} 						
+	body {color:blue;} 					
+
+
+	#seafood.class div
+	#seafodd.class
+	#seafood
+
+	a#x har högre prio än a[id=x]
+
+	om två har samma sepciiftet är det den sista som tar vinner
+
+
+positionering
+	position :
+		relative 	relativ till där den annars skulle hamnat i dokumentet, den intunitiva punkten.
+		absolute	relativ till sin nämaste positionerade förälders 0x0 punkt, om ingen finns så räknas body som närmast.
+		fixed		relativ till browserns vänstra hörn oavsett scroll. klarar procent
+	display
+		divs 		från början block
+		spans 		från början inline
+
+		block 		kan man alltid styla width/height
+		inline		som ord i en text. mestadels användbart i text bitar
+		inline-block	hybrid
+		table		simulera typ som en table
+		table-row		en row
+		table-cell		en cell

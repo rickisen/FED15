@@ -1,26 +1,30 @@
-/* stylesheet.css 
- * 
- * För firefox kompabilitet 
- * måste det vara "min-height"
- * istället för "height", 
- * annars overflowar ej
- *
- * */
+/* stylesheet.css */
 
-.header * {
-	overflow:hidden;
+body {
+	font-family:sans;
+	/*font-size:14px; /*kanske lite fuskigt*/
 }
 
+.header * { 
+	overflow:hidden; 
+}
 
+/* Om den minsta bilden laddas och 
+ * limebox eller brownbox blir två 
+ * rader för lång så slutar diven overflowas 
+ * och hela flexboxen blir för hög 
+ * Händer typ en gång på tjugo. 
+ * Om nu inte detta är med
+ */
 .brownLimeContainer * {
 	white-space: nowrap; 
 	text-overflow: ellipsis;
 }
 
-
 #wrapper {
 	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:column;
 	flex-direction:column;
 
 	width:1200px;
@@ -33,6 +37,7 @@
 .header {
 	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:row;
 	flex-direction:row;
 
 	margin-bottom:20px;
@@ -41,21 +46,21 @@
 
 .picture {
 	border:2px solid black;
-	/*display:flex; /* ibland stretchar typ 10%*/
+	/*display:flex; /* annan fix för  overflow buggen, 
+	 * men strechar bilden fult*/
 }
 
 .redBoxContainer { 
 	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:column;
 	flex-direction:column;
 	flex:1;
-
 }
 
 .redBox {
 	flex:1;
 	min-height:1px;
-
 	background-color:red;
 	border:2px solid black;
 }
@@ -63,24 +68,25 @@
 .bigGreenBox{
 	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:column;
 	flex-direction:column;
 	flex:4;
 	min-height:1px;
-
 }
 
 .darkGreenBoxContainer{ 
 	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:row;
 	flex-direction:row;
 	flex:1;
 	min-height:1px;
+	height:1px;
 }
 
 .darkGreenBox{
 	flex:1;
 	min-width:1px;
-
 	background-color:darkgreen;
 	border:2px solid black;
 }
@@ -88,21 +94,16 @@
 .brownLimeContainer{
 	display:-webkit-flex;
 	display:flex;
+	-webkit-flex-direction:row;
 	flex-direction:row;
 	flex:1;
 	min-height:1px;
+	height:1px;
 }
-
-/*
-.brownLimeContainer .ng-binding {
-				min-height:10px;
-}
-*/
 
 .brownBox{
 	flex-basis:200px;
 	min-height:1px;
-
 	background-color:brown;
 	border:2px solid black;
 }
@@ -110,7 +111,6 @@
 .limeBox{
 	flex:1;
 	min-height:1px;
-
 	background-color:lime;
 	border:2px solid black;
 }
@@ -120,3 +120,11 @@
 	border:1px solid black;
 }
 
+/* bara för att snygga till översta linjen */
+.article:nth-child(2) {
+	border-color:red;
+	border-top:2px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	border-left:1px solid black;
+}

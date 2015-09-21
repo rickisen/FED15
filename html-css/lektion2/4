@@ -1,0 +1,11 @@
+specificity
+	mått för hur specifikt en selctor i css är
+	specificity.keegan.st
+
+
+exempel
+	<p style="color:red;">test text</p> 			// inline 
+	#id-name{color:blue;} 					// css id
+	.class.moreclass{color:blue;} 				// dubbel class
+	.class{color:blue;} 					// class
+	ärvda egenskaper

@@ -1,0 +1,22 @@
+.container{
+		width:500px;
+		border:2px solid brown;
+		background-color:red;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+}
+
+.left {
+		background-color:blue;
+		border:2px solid purple;
+		flex-basis:70px;
+		flex-grow:2;
+}
+
+.right {
+		background-color:blue;
+		border:2px solid purple;
+		flex-basis:70px;
+		flex-grow:1;
+}
