@@ -1,0 +1,16 @@
+form-groups
+	
+form-controll
+	gör att den tar upp sidan ordentligt 
+
+input-group
+	gruppa ihop saker in i en input
+	input-group-addon
+			det somr in i en input 
+
+form (en behlarle av massa inputs )
+
+push/pull
+	col-xs-push-3 	// pusha tre collumner till höger --->
+	col-xs-pull-3 	// pulla tre collumner till vänster <---
+

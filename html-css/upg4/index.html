@@ -1,157 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-				<title>SJ</title>
+    <title>SJ</title>
 
-				<meta charset="UTF8" name="viewport" content="width=device-width, initial-scale=1">
-				<link rel="stylesheet" type="text/css" href="stylesheet.css">
-				
-				<!-- Latest compiled and minified CSS -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta charset="UTF8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-				<!-- Optional theme -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 
 <body>
 
-			<div class="wrapper container-fluid col-md-offset-1 col-md-10">
+<div class="wrapper container-fluid col-md-offset-1 col-md-10">
+   <div class="header row">
+     <div class="col-xs-12"> <!-- SJ Logo -->
+         <a href="#"><img alt="remote" src="http://www.sj.se/content/2/c4/01/05/logo-big.gif"></a>
+     </div>
+     <nav class="col-xs-12 navbar navbar-default hidden-xs"> <!-- main nav bar -->
+           <ul class="nav navbar-nav ">
+             <li><a href="#">Köp Resa</a></li>
+             <li><a href="#">Erbjudanden</a></li>
+             <li><a href="#">SJ Prio</a></li>
+             <li><a href="#">Trafikinfo</a></li>
+             <li><a href="#">Kundservice</a></li>
+             <li><a href="#">Om SJ</a></li>
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="#">Skapa Konto</a></li>
+             <li><a href="#">Logga In</a></li>
+           </ul>
+     </nav><!-- main nav bar -->
+   </div>
+<div class="main row">
+<div class="leftSide row noSideMargin col-md-8"> <!-- leftSide ______________________________________________________ -->
+  <div class="col-xs-12 noPadding greyBg row" >
+        <ul class="nav nav-tabs nav-justified navZeroPadding whiteBg">
+           <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+           <li><a data-toggle="tab" href="#menu1">Köp Resa</a></li>
+           <li><a data-toggle="tab" href="#menu2">Sista Minuten</a></li>
+           <li><a data-toggle="tab" href="#menu2">Lågpriskalender</a></li>
+           <li><a data-toggle="tab" href="#menu2">Pendlar &amp; Arskort</a></li>
+           <li><a data-toggle="tab" href="#menu2">Visa/Ändra resa</a></li>
+        </ul>
+        <div class="tab-content smallMargin">
+           <div id="home" class="tab-pane active">
+              <div class="col-xs-12 col-sm-6 col-md-8 "> <!-- inputHolder holder --> 
+                  <div class="inputHolder row"> <!-- Text input -->
+                     <div class="col-xs-12 col-sm-6 input" >
+                           <div> Från <input type="TEXT" class="form-control"> </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 input" >
+                           <div> Till <input type="TEXT" class="form-control"> </div>
+                     </div>
+                  </div> <!-- Text input _______________________ -->
+                  <div class="row inputHolder" >  <!-- dropdowns_____________  -->
+                     <div class="col-sm-6 col-md-6">  
+                           <span class="col-xs-12">Avresa</span>
+                           <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
+                               data-toggle="dropdown"> Avgång <div class="caret"></div></button>
+                           <button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
+                               data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
+                     </div>
+                     <div class="col-xs-6 col-sm-6"> 
+                           <span class="col-xs-12">Återresa</span>
+                           <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
+                               data-toggle="dropdown"> Avgång <div class="caret"></div></button>
+                          <button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
+                               data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
+                     </div>
+                  </div>
+              </div> <!-- inputHolder holder __________________________________ --> 
+              <div class="hidden-xs col-sm-4 col-md-4 ">
+                  <h5> Tåg Göteborg - Stockholm </h5>
+                  <p>SJ kör snabbaste tågresan mellan Stockholm och Göteborg. 
+                      Res med X 2000 på 2 timmar och 50 minuter.</p> 
+                  <button type="button" class="btn orangeBG pull-right">Gå Vidare</button>
+              </div>
+              <div class="visible-sm noPadding col-sm-2"> <!-- Hidden Picture -->
+                  <img class="img-responsive" alt="local" src="Lagpriskalender.jpg">
+              </div>
+          </div>
+      </div>
+  </div>
 
-				<div class="row header">
-					<div class="col-xs-12">
-									<a href="#"><img src="http://www.sj.se/content/2/c4/01/05/logo-big.gif"></img></a>
-					</div>
+  <!-- puff holder -->
+  <div class="row PictureBox greyBg col-md-12 hidden-xs hidden-sm "> 
+           <div class="col-sm-2 col-md-4">
+               <img alt="local" src="Lagpriskalender.jpg">
+               <h5>Lågpriskalender</h5>
+               <p>Här hittar du de billigaste priserna till populära resmål.</p>
+               <a href="#">Hitta billiga biljetter</a>
+           </div>
+  
+           <div class="col-sm-2 col-md-4">
+               <img alt="local" src="Student.jpg">
+               <h5>Student &amp; ungdom</h5>
+               <p> Sista minuten-resor från 155 kr och mycket annat. Ta tåget!</p>
+               <a href="#">Hitta Erbjudanden</a>
+           </div>
+  
+           <div class="col-sm-2 col-md-4">
+               <img alt="local" src="SJBiz_man_pa_tag.jpg">
+               <h5>SJ Biz för företag</h5>
+               <p> Flexibla företagsresor med personlig service.</p>
+               <a href="#">Gå med i SJ Biiz</a>
+           </div>
+  </div> <!-- puff end -->
 
-					<div class="col-xs-12 hidden-xs">
-									<div class="row btn-group" role="group">
-													<button type="button" class="btn btn-default">Köp Resa</button>
-													<button type="button" class="btn btn-default">Erbjudanden</button>
-													<button type="button" class="btn btn-default">SJ Prio</button>
-													<button type="button" class="btn btn-default">Trafikinfo</button>
-													<button type="button" class="btn btn-default">Kundservice</button>
-													<button type="button" class="btn btn-default">Om SJ</button>
-									</div>
-									<div class="row btn-group pull-right" role="group">
-													<button type="button" class="btn btn-default ">Skapa Konto</button>
-													<button type="button" class="btn btn-default ">Logga In</button>
-									</div>
-					</div>
-				</div>
+<!-- reklam ==================================================================== -->
+  <div class="panel panel-default noPadding noSideMargin col-xs-12 hidden-xs hidden-sm" > 
+           <div class="panel-heading">
+              <h6 class="panel-titel">Aktuell information</h6>
+           </div>
+           <div class="panel-body row">
+                   <div class="col-sm-2 col-md-4">
+                       <img alt="local" src="Student.jpg">
+                       <h5>SJ Biz för företag</h5>
+                       <p> Flexibla företagsresor med personlig service.</p>
+                       <a href="#">Gå med i SJ Biiz</a>
+                   </div>
+           </div>
+  </div> <!-- reklam  end -->
 
-	<div class="row main col-md-8">
-					<div class="row greyBg col-sm-12"> <!-- uträknare -->
-									<div class="row col-sm-12">
-													<button type="button" class="btn butt btn-default">Köp Resa</button>
-													<button type="button" class="btn butt btn-default">Sista Minuten</button>
-													<button type="button" class="btn butt btn-default hidden-xs" >Lågpriskalender</button>
-													<button type="button" class="btn butt btn-default">Pendlar- &amp; Årskort</button>
-													<button type="button" class="btn butt btn-default">Visa/Ändra resa</button>
-									</div>
+</div> <!-- leftSide ____________________________________________________________________/-->
 
-									<div class="row col-sm-6"> <!-- input holder holder --> 
-													<div class="inputHolder row">
-																	<div class="col-xs-12 col-sm-6 input" >
-																					<div> Från <input type="TEXT" class="form-control"> </div>
-																	</div>
+<div class="rightSide noSideMargin noPadding col-md-4" > <!-- rightSide -->
+        <div class="panel panel-default">
+           <div class="panel-heading">
+                   <h6 class="panel-titel">Aktuell information</h6>
+           </div>
+           <div class="panel-body">
+                   <h5> Just nu reser extra många med SJs tåg </h5>
+                   <p>Människor på flykt har i större antal än tidigare sökt sig till Sverige under de senaste veckorna. 
+                   Många av dem reser med SJs tåg.  Vi utökar vår kapacitet på de linjer där efterfrågan är stor.
+                   Vi hoppas på förståelse för att det ändå kan bli trångt på vissa tåg.
+                   Vid resa med SJ tåg behövs en biljett innan ombordstigning.
+                   </p> <hr/>
+                   <h5>Använder du Safari som webbläsare?</h5>
+                   <p>Vi rekommenderar att du använder en annan webbläsare eftersom det ibland 
+                   kan visas en felsida vid betalning trots att betalningen har genomförts. 
+                   Vi arbetar för att lösa detta. </p>
+           </div>
+        </div>
+        <img alt="local" class="col-md-12 col-sm-6 col-xs-12" src="SJ_se_365x254_150805_2.jpg">
+        <img alt="local" class="col-md-12 col-sm-6 hidden-xs" src="SJP_7995_Mediaportal_sj.se_365x254_brollop.jpg">
+</div> <!-- rightSide end ______________________________________________________________/-->
 
-																	<div class="col-xs-12 col-sm-6 input" >
-																					<div> Till <input type="TEXT" class="form-control"> </div>
-																	</div>
-													</div>
+<div class="footer"> </div>
 
-													<div class="row" >  <!-- dropdown -->
-																	<div class="inputHolder col-xs-6 col-sm-6">  
-																					<span class="col-xs-12">Avresa</span>
-
-																					<button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
-																									data-toggle="dropdown"> Avgång <span class="caret"></span></button>
-
-																					<button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
-																									data-toggle="dropdown"> 11:00 <span class="caret"></span></button>
-
-																	</div>
-
-																	<div class="inputHolder col-xs-6 col-sm-6"> 
-																					<span class="col-xs-12">Återresa</span>
-
-																					<button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
-																									data-toggle="dropdown"> Avgång <span class="caret"></span></button>
-
-																					<button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
-																									data-toggle="dropdown"> 11:00 <span class="caret"></span></button>
-																	</div>
-													</div>
-									</div>
-
-									<div class="hidden-xs border col-sm-4 col-md-6">
-													<h5> Tåg Göteborg - Stockholm </h5>
-													<p>SJ kör snabbaste tågresan mellan Stockholm och Göteborg. 
-													Res med X 2000 på 2 timmar och 50 minuter.</p> 
-													<button type="button" class="btn pull-right orangebutton">Gå Vidare</button>
-									</div>
-
-									<div class="visible-sm col-sm-2">
-													<img src="Lagpriskalender.jpg"></img>
-									</div>
-					</div>
-
-					<div class="row greyBg col-md-12 hidden-xs hidden-sm "> <!-- reklam holder -->
-									<div class="col-sm-2 col-md-4">
-													<img src="Lagpriskalender.jpg"></img>
-													<h5>Lågpriskalender</h3>
-													<p>Här hittar du de billigaste priserna till populära resmål.</p>
-													<a href="#">Hitta billiga biljetter</a>
-									</div>
-
-									<div class="col-sm-2 col-md-4">
-													<img src="SJBiz_man_pa_tag.jpg"></img>
-													<h5>Student &amp; ungdom</h3>
-													<p> Sista minuten-resor från 155 kr och mycket annat. Ta tåget!</p>
-													<a href="#">Hitta Erbjudanden</a>
-									</div>
-
-									<div class="col-sm-2 col-md-4">
-													<img src="Student.jpg"></img>
-													<h5>SJ Biz för företag</h3>
-													<p> Flexibla företagsresor med personlig service.</p>
-													<a href="#">Gå med i SJ Biiz</a>
-									</div>
-					</div>
-			</div> <!-- main -->
-
-			<div class="side row col-md-4" > <!-- Side -->
-							<div class="panel panel-default">
-											<div class="panel-heading">
-															<h6 class="panel-titel">Aktuell information</h6>
-											</div>
-											<div class="panel-body">
-											<h5> Just nu reser extra många med SJs tåg </h5>
-											<p>Människor på flykt har i större antal än tidigare sökt sig till Sverige under de senaste veckorna. 
-											Många av dem reser med SJs tåg.  Vi utökar vår kapacitet på de linjer där efterfrågan är stor.
-											Vi hoppas på förståelse för att det ändå kan bli trångt på vissa tåg.
-											Vid resa med SJ tåg behövs en biljett innan ombordstigning.
-											</p> <hr/>
-											<h5>Använder du Safari som webbläsare?</h5>
-											<p>Vi rekommenderar att du använder en annan webbläsare eftersom det ibland 
-											kan visas en felsida vid betalning trots att betalningen har genomförts. 
-											Vi arbetar för att lösa detta. </p>
-											</div>
-							</div>
-
-							<img class="col-md-12 col-sm-6 col-xs-12" src="SJ_se_365x254_150805_2.jpg"></img>
-							<img class="col-md-12 col-sm-6 hidden-xs" src="SJP_7995_Mediaportal_sj.se_365x254_brollop.jpg"></img>
-			</div> <!-- Side -->
-
-
-			<div class="footer"> </div>
-
-			</div> <!-- wrapper -->
-
+</div> <!-- main end -->
+</div> <!-- Wrapper end -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 </body>
 </html>

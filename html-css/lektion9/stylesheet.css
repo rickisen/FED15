@@ -1,0 +1,16 @@
+body {
+        padding:100px;
+}
+.green {
+        background-color:lightgreen;
+}
+
+@media all and (max-width: 768px) {
+        .green {
+                background-color:white;
+        }
+}
+
+/* .panel { */
+/*         background-color: lightgreen !important; */
+/* } */
