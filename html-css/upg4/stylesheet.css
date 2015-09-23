@@ -7,13 +7,13 @@ h5 {
         font-weight: bold!important;
 }
 
-.navZeroPadding li {
+.nav-justified li {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 }
 
-.navZeroPadding li a {
+.nav-justified li a {
         padding-left:  0px!important;
         padding-right: 0px!important;
 }
@@ -27,8 +27,12 @@ h5 {
         margin-right:0px!important;
 }
 
+.smallPadding {
+        padding:5px!important;
+}
+
 .smallMargin {
-        margin:5px;
+        margin:5px!important;
 }
 
 .noPadding {
@@ -38,42 +42,22 @@ h5 {
 
 .greyBg {
 				background-color:#f1f1f1;
-				margin:10px;
 }
 
 .whiteBg {
 				background-color:white;
 }
 
-.header {
-				margin-bottom:10px;
-}
+.header { }
 
 .inputHolder {
 				background-color:white;
         border-right:2px solid #bbbbbb;
         border-bottom:2px solid #bbbbbb;
-        margin:5px 0px 5px 0px ;
         padding-bottom: 15px;
-}
-
-.PictureBox {
-        padding:15px;
 }
 
 .orangeBG {
         background-color:lightsalmon;
 }
 
-.wrapper {
-				/* border:1px solid black; */
-}
-
-
-@media all and (max-width:970px){
-				.butt { width:20%; }
-}
-
-@media all and (max-width:768px){
-				.butt { width:100%; }
-}
