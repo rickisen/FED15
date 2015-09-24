@@ -7,6 +7,10 @@ h5 {
         font-weight: bold!important;
 }
 
+.fatHr {
+        border-width: 5px;
+}
+
 .nav-justified li {
         white-space: nowrap;
         overflow: hidden;
@@ -61,3 +65,16 @@ h5 {
         background-color:lightsalmon;
 }
 
+.wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        width:80%;
+}
+
+@media all and (max-width:976px){
+        .wrapper{
+                width:auto;
+                margin-left: none;
+                margin-right: none;
+        }
+}
