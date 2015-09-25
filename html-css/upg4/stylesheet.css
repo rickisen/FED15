@@ -26,6 +26,10 @@ h5 {
         border:1px solid black;
 }
 
+.borderInherit * {
+        border:1px solid black;
+}
+
 .noSideMargin {
         margin-left:0px!important;
         margin-right:0px!important;
@@ -37,6 +41,14 @@ h5 {
 
 .smallMargin {
         margin:5px!important;
+}
+
+.BottomMargin {
+        margin-bottom:15px!important;
+}
+
+.rightMargin{
+        margin-right:5px!important;
 }
 
 .noPadding {
@@ -70,6 +82,40 @@ h5 {
         margin-left: auto;
         width:80%;
 }
+
+/* panel styling */
+.panel .panel-heading {
+        background: linear-gradient(#9e9e9e,#626262)!important;
+}
+
+.panel .panel-heading h6 {
+        color: white;
+        font-weight: bold;
+}
+
+.yellowPanel .panel-body {
+        background-color: #EDE8D9;
+}
+
+.yellowPanel .panel-heading {
+        background: linear-gradient(#ded7c7,#c8b68e)!important;
+}
+
+.yellowPanel .panel-heading h6 {
+        color:black;
+}
+
+.yellowPanel hr {
+        border-color:black;
+}
+
+ h6 {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+}
+
+/* ------------------------ */
+
 
 @media all and (max-width:976px){
         .wrapper{

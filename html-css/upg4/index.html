@@ -7,10 +7,12 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
 </head>
 
 <body>
@@ -20,11 +22,11 @@
 
 <!-- Header =================================================================================== -->
 <div class="row"> <!-- header -->
-        <div class="row"> <!-- SJ Logo -->
-         <a href="#" class="col-xs-1"><img alt="remote" src="http://www.sj.se/content/2/c4/01/05/logo-big.gif"></a>
+        <div class="col-xs-12"> <!-- SJ Logo -->
+         <a href="#" class=""><img alt="local" src="img/logo-big.gif"></a>
         </div>
-        <div class="row">
-                <nav class="col-xs-12 navbar navbar-default hidden-xs"> <!-- nav bar -->
+        <div class="col-xs-12">
+                <nav class="row navbar navbar-default hidden-xs"> <!-- nav bar -->
                    <ul class="nav navbar-nav ">
                      <li><a href="#">Köp Resa</a></li>
                      <li><a href="#">Erbjudanden</a></li>
@@ -33,7 +35,7 @@
                      <li><a href="#">Kundservice</a></li>
                      <li><a href="#">Om SJ</a></li>
                    </ul>
-                   <ul class="nav navbar-nav navbar-right">
+                   <ul class="nav navbar-nav navbar-right rightMargin">
                      <li><a href="#">Skapa Konto</a></li>
                      <li><a href="#">Logga In</a></li>
                    </ul>
@@ -43,10 +45,11 @@
 
 <!-- main  ====================================================================================== -->
 <div class="row "> 
+ <div class="row ">  <!-- too kill the side margin -->
 <!-- leftSide =========================================== -->
 <div class="col-md-8"> 
   <!-- uträknare -->
-  <div class="panel greyBg row" > 
+  <div class="panel" >  <!-- varför en panel? -->
         <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
            <li class="active"><a data-toggle="tab" href="#menu1">Home</a></li>
            <li>               <a data-toggle="tab" href="#menu2">Köp Resa</a></li>
@@ -58,12 +61,12 @@
         <div class="tab-content greyBg "> 
            <div class="tab-pane active row" id="menu1">
               <div class="col-xs-12 col-sm-6 col-md-8 "> <!-- inputHolder holder --> 
-                  <div class="inputHolder smallMargin row"> <!-- Text input -->
+                  <div class="inputHolder smallMargin row form-group"> <!-- Text input -->
                      <div class="col-xs-12 col-sm-6 input" >
-                           <div> Från <input type="TEXT" class="form-control"> </div>
+                           <div> Från <input type="TEXT" class="input-sm form-control"> </div>
                      </div>
                      <div class="col-xs-12 col-sm-6 input" >
-                           <div> Till <input type="TEXT" class="form-control"> </div>
+                           <div> Till <input type="TEXT" class="input-sm form-control"> </div>
                      </div>
                   </div> <!-- Text input -->
                   <div class="row smallMargin inputHolder" >  <!-- dropdowns -->
@@ -99,7 +102,7 @@
   </div> <!-- uträknare ends -->
 
   <!-- puff holder -->
-  <div class="row hidden-xs hidden-sm panel panel-default "> 
+  <div class="hidden-xs hidden-sm panel panel-default "> 
        <div class="panel-body greyBg ">
            <div class="col-sm-2 col-md-4">
                <img alt="local" src="img/Lagpriskalender.jpg">
@@ -123,7 +126,7 @@
   </div> <!-- puff end -->
 
 <!-- reklam ================== -->
-  <div class="row panel panel-default hidden-xs hidden-sm" > 
+  <div class="panel panel-default hidden-xs hidden-sm" > 
            <div class="panel-heading ">
               <h6 class="panel-titel">Erbjudanden fran SJ</h6>
            </div>
@@ -153,7 +156,9 @@
 
 <!-- rightSide ================================================================== -->
 <div class="col-md-4" > 
-           <div class="row panel panel-default">
+        <div class="row">
+          <div class="col-xs-12" > <!-- needed since panel does weird shit-->
+           <div class="panel panel-default yellowPanel">
               <div class="panel-heading">
                       <h6 class="panel-titel">Aktuell information</h6>
               </div>
@@ -170,18 +175,24 @@
                       Vi arbetar för att lösa detta. </p>
               </div>
            </div>
-        
+         </div>
+        </div>
+
         <div class="row">
-                <img alt="local" class="col-md-12 col-sm-6 col-xs-12" src="img/SJ_se_365x254_150805_2.jpg">
+                <img alt="local" class="col-md-12 col-sm-6 col-xs-12 BottomMargin" src="img/SJ_se_365x254_150805_2.jpg">
                 <img alt="local" class="col-md-12 col-sm-6 hidden-xs" src="img/SJP_7995_Mediaportal_sj.se_365x254_brollop.jpg">
         </div>
-</div> <!-- rightSide end -->
+  </div> <!-- rightSide end -->
+ </div> <!-- main end -->
 </div> <!-- main end -->
 
 <!-- FOOTER =========================================================================================== -->
 <div class="row footer">  
-        <hr class="col-xs-12 fatHr ">
-        <div class="col-sm-3 col-md-2">
+        <div class="col-xs-12">
+                <hr class="fatHr row">
+        </div>
+
+        <div class="col-sm-3 col-md-2 col-md-offset-1">
                 <h5>Köp resa</h5>
                 <ul>
                         <li><a href="#">asdasd</a></li>
@@ -247,16 +258,14 @@
                 </ul>
         </div>
         <hr class="col-xs-12 hidden-xs">
-        <p class="col-xs-12"> 
-        Copyright 2015, SJ AB | SJ använder cookies | Om webbplatsen</p>
-</div> <!-- footer end -->
-
-
+        <p class="col-xs-12"> Copyright 2015, SJ AB | SJ använder cookies | Om webbplatsen</p>
+ </div> <!-- footer end -->
 </div> <!-- Wrapper end -->
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="script/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
