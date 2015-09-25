@@ -22,24 +22,37 @@
 
 <!-- Header =================================================================================== -->
 <div class="row"> <!-- header -->
-        <div class="col-xs-12"> <!-- SJ Logo -->
-         <a href="#" class=""><img alt="local" src="img/logo-big.gif"></a>
+        <div class="col-xs-12 maxLogoHeight"> <!-- SJ Logo -->
+                <div class="row">
+                          <a href="#" class="col-xs-6"><img alt="local" src="img/logo-big.gif"></a>
+                          <div class="col-xs-6 hidden-sm hidden-xs">
+                              <div class="row ">
+                                  <img class="pull-right" src="http://tusatrade.com/wp-content/uploads/2014/08/uk-flag.jpg">
+                                  <div class="pull-right input-group">
+                                          <input class="form-control" placeholder="Ställ din fraga här">
+                                          <span class="orangeBG input-group-addon">Sök</span>
+                                  </div>
+                              </div>
+                          </div>
+                </div>
         </div>
-        <div class="col-xs-12">
-                <nav class="row navbar navbar-default hidden-xs"> <!-- nav bar -->
-                   <ul class="nav navbar-nav ">
-                     <li><a href="#">Köp Resa</a></li>
-                     <li><a href="#">Erbjudanden</a></li>
-                     <li><a href="#">SJ Prio</a></li>
-                     <li><a href="#">Trafikinfo</a></li>
-                     <li><a href="#">Kundservice</a></li>
-                     <li><a href="#">Om SJ</a></li>
-                   </ul>
-                   <ul class="nav navbar-nav navbar-right rightMargin">
-                     <li><a href="#">Skapa Konto</a></li>
-                     <li><a href="#">Logga In</a></li>
-                   </ul>
-                </nav>
+        <div class="col-xs-12 panel panel-default btnGroupNav">
+                <div class="panel-body hidden-xs row"> <!-- nav bar -->
+                        <div class="row"> <!-- to kill side margin -->
+                                <div class="btn-group " role="group">
+                                        <button type="button" class="noborder btn btn-default">Köp Resa</button>
+                                        <button type="button" class="borderLeft btn btn-default">Erbjudanden</button>
+                                        <button type="button" class="borderLeft btn btn-default">SJ Prio</button>
+                                        <button type="button" class="borderLeft btn btn-default">Trafikinfo</button>
+                                        <button type="button" class="borderLeft btn btn-default">Kundservice</button>
+                                        <button type="button" class="borderLeft borderRight btn btn-default">Om SJ</button>
+                                </div>
+                                <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="borderLeft btn btn-default">Skapa Konto</button>
+                                        <button type="button" class="borderLeft btn btn-default">Logga In</button>
+                                </div>
+                        </div>
+                </div>
         </div>
 </div>
 
@@ -51,12 +64,12 @@
   <!-- uträknare -->
   <div class="panel" >  <!-- varför en panel? -->
         <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
-           <li class="active"><a data-toggle="tab" href="#menu1">Home</a></li>
-           <li>               <a data-toggle="tab" href="#menu2">Köp Resa</a></li>
-           <li>               <a data-toggle="tab" href="#menu3">Sista Minuten</a></li>
-           <li>               <a data-toggle="tab" href="#menu4">Lågpriskalender</a></li>
-           <li>               <a data-toggle="tab" href="#menu5">Pendlar &amp; Arskort</a></li>
-           <li>               <a data-toggle="tab" href="#menu6">Visa/Ändra resa</a></li>
+           <li class="active">   <a data-toggle="tab" href="#menu1">Home</a></li>
+           <li>                  <a data-toggle="tab" href="#menu2">Köp Resa</a></li>
+           <li>                  <a data-toggle="tab" href="#menu3">Sista Minuten</a></li>
+           <li class="hidden-xs"><a data-toggle="tab" href="#menu4">Lågpriskalender</a></li>
+           <li>                  <a data-toggle="tab" href="#menu5">Pendlar &amp; Arskort</a></li>
+           <li>                  <a data-toggle="tab" href="#menu6">Visa/Ändra resa</a></li>
         </ul>
         <div class="tab-content greyBg "> 
            <div class="tab-pane active row" id="menu1">
