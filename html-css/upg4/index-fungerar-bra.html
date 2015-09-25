@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SJ</title>
+
+    <meta charset="UTF8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+
+<!-- WRAPPER ====================================================================================== -->
+<div class="wrapper container-fluid">
+
+<!-- Header =================================================================================== -->
+<div class="row"> <!-- header -->
+        <div class="col-xs-12"> <!-- SJ Logo -->
+         <a href="#" class=""><img alt="local" src="img/logo-big.gif"></a>
+        </div>
+        <div class="col-xs-12">
+                <nav class="row navbar navbar-default hidden-xs"> <!-- nav bar -->
+                   <ul class="nav navbar-nav ">
+                     <li><a href="#">Köp Resa</a></li>
+                     <li><a href="#">Erbjudanden</a></li>
+                     <li><a href="#">SJ Prio</a></li>
+                     <li><a href="#">Trafikinfo</a></li>
+                     <li><a href="#">Kundservice</a></li>
+                     <li><a href="#">Om SJ</a></li>
+                   </ul>
+                   <ul class="nav navbar-nav navbar-right rightMargin">
+                     <li><a href="#">Skapa Konto</a></li>
+                     <li><a href="#">Logga In</a></li>
+                   </ul>
+                </nav>
+        </div>
+</div>
+
+<!-- main  ====================================================================================== -->
+<div class="row "> 
+ <div class="row ">  <!-- too kill the side margin -->
+<!-- leftSide =========================================== -->
+<div class="col-md-8"> 
+  <!-- uträknare -->
+  <div class="panel" >  <!-- varför en panel? -->
+        <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
+           <li class="active"><a data-toggle="tab" href="#menu1">Home</a></li>
+           <li>               <a data-toggle="tab" href="#menu2">Köp Resa</a></li>
+           <li>               <a data-toggle="tab" href="#menu3">Sista Minuten</a></li>
+           <li>               <a data-toggle="tab" href="#menu4">Lågpriskalender</a></li>
+           <li>               <a data-toggle="tab" href="#menu5">Pendlar &amp; Arskort</a></li>
+           <li>               <a data-toggle="tab" href="#menu6">Visa/Ändra resa</a></li>
+        </ul>
+        <div class="tab-content greyBg "> 
+           <div class="tab-pane active row" id="menu1">
+              <div class="col-xs-12 col-sm-6 col-md-8 "> <!-- inputHolder holder --> 
+                  <div class="inputHolder smallMargin row form-group"> <!-- Text input -->
+                     <div class="col-xs-12 col-sm-6 input" >
+                           <div> Från <input type="TEXT" class="input-sm form-control"> </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 input" >
+                           <div> Till <input type="TEXT" class="input-sm form-control"> </div>
+                     </div>
+                  </div> <!-- Text input -->
+                  <div class="row smallMargin inputHolder" >  <!-- dropdowns -->
+                     <div class="col-sm-6 col-md-6">  
+                           <span class="col-xs-12">Avresa</span>
+                           <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
+                               data-toggle="dropdown"> Avgång <div class="caret"></div></button>
+                           <button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
+                               data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
+                     </div>
+                     <div class="col-xs-6 col-sm-6"> 
+                           <span class="col-xs-12">Återresa</span>
+                           <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
+                               data-toggle="dropdown"> Avgång <div class="caret"></div></button>
+                          <button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
+                               data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
+                     </div>
+                  </div>
+              </div> <!-- inputHolder holder --> 
+
+              <div class="hidden-xs col-sm-4 col-md-4 ">
+                  <h5> Tåg Göteborg - Stockholm </h5>
+                  <p>SJ kör snabbaste tågresan mellan Stockholm och Göteborg. 
+                      Res med X 2000 på 2 timmar och 50 minuter.</p> 
+                  <button type="button" class="btn orangeBG pull-right">Gå Vidare</button>
+              </div>
+
+              <div class="visible-sm col-sm-2"> <!-- Hidden Picture -->
+                  <img class="img-responsive" alt="local" src="img/Lagpriskalender.jpg">
+              </div>
+          </div>
+      </div>
+  </div> <!-- uträknare ends -->
+
+  <!-- puff holder -->
+  <div class="hidden-xs hidden-sm panel panel-default "> 
+       <div class="panel-body greyBg ">
+           <div class="col-sm-2 col-md-4">
+               <img alt="local" src="img/Lagpriskalender.jpg">
+               <h5>Lågpriskalender</h5>
+               <p>Här hittar du de billigaste priserna till populära resmål.</p>
+               <a href="#">Hitta billiga biljetter</a>
+           </div>
+           <div class="col-sm-2 col-md-4">
+               <img alt="local" src="img/Student.jpg">
+               <h5>Student &amp; ungdom</h5>
+               <p> Sista minuten-resor från 155 kr och mycket annat. Ta tåget!</p>
+               <a href="#">Hitta Erbjudanden</a>
+           </div>
+           <div class="col-sm-2 col-md-4">
+               <img alt="local" src="img/SJBiz_man_pa_tag.jpg">
+               <h5>SJ Biz för företag</h5>
+               <p> Flexibla företagsresor med personlig service.</p>
+               <a href="#">Gå med i SJ Biiz</a>
+           </div>
+      </div>
+  </div> <!-- puff end -->
+
+<!-- reklam ================== -->
+  <div class="panel panel-default hidden-xs hidden-sm" > 
+           <div class="panel-heading ">
+              <h6 class="panel-titel">Erbjudanden fran SJ</h6>
+           </div>
+           <div class="panel-body greyBg " >
+                   <div class="col-sm-2 col-md-4">
+                       <img alt="local" src="img/ABBA_-166x166.jpg">
+                       <h5>Walk in. Dance Out</h5>
+                       <p> Här bokar du tid och köper etré biljetter till ABBA the Museum.</p>
+                       <a href="#">Köp billjet här</a>
+                   </div>
+                   <div class="col-sm-2 col-md-4">
+                       <img alt="local" src="img/Utland_166x166.jpg">
+                       <h5>Resa med tag i utlandet</h5>
+                       <p> Här kan du köpa alla typer av Internationella tagbilljetter och kort</p>
+                       <a href="#">Köp din utlandsresa här</a>
+                   </div>
+                   <div class="col-sm-2 col-md-4">
+                       <img alt="local" src="img/ScandicRubinen_2015.jpg">
+                       <h5>Boka hotell</h5>
+                       <p> Vi samarbetar med Expedia som har ett stort hotellutbud i alla prisklasser.</p>
+                       <a href="#">Boka hotell här</a>
+                   </div>
+           </div>
+  </div> <!-- reklam  end -->
+
+</div> <!-- leftSide end-->
+
+<!-- rightSide ================================================================== -->
+<div class="col-md-4" > 
+        <div class="row">
+          <div class="col-xs-12" > <!-- needed since panel does weird shit-->
+           <div class="panel panel-default yellowPanel">
+              <div class="panel-heading">
+                      <h6 class="panel-titel">Aktuell information</h6>
+              </div>
+              <div class="panel-body">
+                      <h5> Just nu reser extra många med SJs tåg </h5>
+                      <p>Människor på flykt har i större antal än tidigare sökt sig till Sverige under de senaste veckorna. 
+                      Många av dem reser med SJs tåg.  Vi utökar vår kapacitet på de linjer där efterfrågan är stor.
+                      Vi hoppas på förståelse för att det ändå kan bli trångt på vissa tåg.
+                      Vid resa med SJ tåg behövs en biljett innan ombordstigning.
+                      </p> <hr/>
+                      <h5>Använder du Safari som webbläsare?</h5>
+                      <p>Vi rekommenderar att du använder en annan webbläsare eftersom det ibland 
+                      kan visas en felsida vid betalning trots att betalningen har genomförts. 
+                      Vi arbetar för att lösa detta. </p>
+              </div>
+           </div>
+         </div>
+        </div>
+
+        <div class="row">
+                <img alt="local" class="col-md-12 col-sm-6 col-xs-12 BottomMargin" src="img/SJ_se_365x254_150805_2.jpg">
+                <img alt="local" class="col-md-12 col-sm-6 hidden-xs" src="img/SJP_7995_Mediaportal_sj.se_365x254_brollop.jpg">
+        </div>
+  </div> <!-- rightSide end -->
+ </div> <!-- main end -->
+</div> <!-- main end -->
+
+<!-- FOOTER =========================================================================================== -->
+<div class="row footer">  
+        <div class="col-xs-12">
+                <hr class="fatHr row">
+        </div>
+
+        <div class="col-sm-3 col-md-2 col-md-offset-1">
+                <h5>Köp resa</h5>
+                <ul>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                </ul>
+        </div>
+        <div class="col-sm-3 col-md-2 hidden-xs">
+                <h5>Köp resa</h5>
+                <ul>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                </ul>
+        </div>
+        <div class="col-sm-3 col-md-2 hidden-xs">
+                <h5>Köp resa</h5>
+                <ul>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                </ul>
+        </div>
+        <div class="col-sm-3 col-md-2 hidden-xs">
+                <h5>Köp resa</h5>
+                <ul>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                </ul>
+        </div>
+        <div class="col-sm-3 col-md-2 hidden-xs hidden-sm">
+                <h5>Köp resa</h5>
+                <ul>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                        <li><a href="#">asdasd</a></li>
+                </ul>
+        </div>
+        <hr class="col-xs-12 hidden-xs">
+        <p class="col-xs-12"> Copyright 2015, SJ AB | SJ använder cookies | Om webbplatsen</p>
+ </div> <!-- footer end -->
+</div> <!-- Wrapper end -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="script/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
