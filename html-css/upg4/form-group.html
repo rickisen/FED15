@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form workshop</title>
+
+    <meta charset="UTF8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="form-group-sm">
+                                <div class="col-sm-6">
+                                <label for="fran">Fran</label> 
+                                <input id="fran" class="form-control" placeholder="ex Nässjö C, Hötorget T-bana">
+                                </div>
+
+                                <div class="col-sm-6">
+                                <label for="till">Till</label> 
+                                <input id="till" class="form-control" placeholder="ex Karlstad C, Eksjö">
+                                </div>
+                        </div>
+
+                        <div class="form-group-sm">
+                                <div class="col-sm-6">
+                                        <label for="avresa">Avresa</label> 
+                                        <div id="avresa" class="row">
+                                                <div class="col-xs-8"> 
+                                                      <select class="form-control selectpicker" >
+                                                              <option>Avgang</option>
+                                                              <option>Ankomst</option>
+                                                      </select>
+                                                </div>
+                                                <div class="col-xs-4"> 
+                                                      <select class="form-control selectpicker">
+                                                              <option>10.00</option>
+                                                              <option>14.00</option>
+                                                      </select>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col-sm-6">
+                                        <label for="aterresa">Aterresa</label> 
+                                        <div id="aterresa" class="row">
+                                                <div class="col-xs-8"> 
+                                                      <select class="form-control selectpicker">
+                                                              <option>Ingen</option>
+                                                              <option>Avgang</option>
+                                                      </select>
+                                                </div>
+                                                <div class="col-xs-4"> 
+                                                      <select class="form-control selectpicker">
+                                                              <option>13.00</option>
+                                                              <option>14.00</option>
+                                                      </select>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+</html>
