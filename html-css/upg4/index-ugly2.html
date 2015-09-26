@@ -65,19 +65,22 @@
 
   <div class="col-md-12"><!-- uträknare -->
         <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
-           <li class="active">   <a data-toggle="tab" href="#menu1">Köp Resa</a></li>
-           <li>                  <a data-toggle="tab" href="#menu2">Sista Minuten</a></li>
-           <li class="hidden-xs"><a data-toggle="tab" href="#menu3">Lågpriskalender</a></li>
-           <li>                  <a data-toggle="tab" href="#menu4">Pendlar &amp; Arskort</a></li>
-           <li>                  <a data-toggle="tab" href="#menu5">Visa/Ändra resa</a></li>
+           <li class="active">   <a data-toggle="tab" href="#menu1">Home</a></li>
+           <li>                  <a data-toggle="tab" href="#menu2">Köp Resa</a></li>
+           <li>                  <a data-toggle="tab" href="#menu3">Sista Minuten</a></li>
+           <li class="hidden-xs"><a data-toggle="tab" href="#menu4">Lågpriskalender</a></li>
+           <li>                  <a data-toggle="tab" href="#menu5">Pendlar &amp; Arskort</a></li>
+           <li>                  <a data-toggle="tab" href="#menu6">Visa/Ändra resa</a></li>
         </ul>
-        <div class="tab-content greyBg col-xs-12"> 
+  </div>
+  <div class="col-md-12 col-sm-9 removeRightPadding"> <!-- tab content sep -->
+        <div class="tab-content greyBg "> 
            <div class="tab-pane active row" id="menu1">
               <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-8 "> <!-- inputHolder holder --> 
                   <div class="inputHolder smallMargin row form-group"> <!-- Text input -->
                      <div class="col-xs-12 col-sm-6 input" >
                            <div> 
-                                   <label for="fran"> Från</label>
+                                   <label for="fran">Från </label>
                                    <input  id="fran" type="TEXT" class="input-sm form-control" placeholder="ex Nässjö C, Hötorget T-bana"> 
                            </div>
                      </div>
@@ -90,7 +93,7 @@
                   </div> 
                   <div class="row smallMargin inputHolder" >  <!-- dropdowns -->
                      <div class="col-sm-6 col-md-6">  
-                           <label for="avresa"><span class="glyphicon glyphicon-circle-arrow-right"></span> Avresa</label>
+                           <label for="avresa">Avresa</label>
                            <div id="avresa" >
                                    <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
                                        data-toggle="dropdown"> Avgång <div class="caret"></div></button>
@@ -99,7 +102,7 @@
                            </div>
                      </div>
                      <div class="col-sm-6 col-md-6">  
-                           <label for="aterresa"><span class="glyphicon glyphicon-circle-arrow-left"></span> Aterresa</label>
+                           <label for="aterresa">Aterresa</label>
                            <div id="aterresa" >
                                    <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
                                        data-toggle="dropdown"> Ingen <div class="caret"></div></button>
@@ -110,44 +113,40 @@
                  </div>
               </div> <!-- inputHolder holder --> 
 
-              <div class="hidden-xs col-sm-3 col-md-4 ">
+              <div class="hidden-xs col-sm-4">
                   <h5> Tåg Göteborg - Stockholm </h5>
                   <p>SJ kör snabbaste tågresan mellan Stockholm och Göteborg. 
                       Res med X 2000 på 2 timmar och 50 minuter.</p> 
                   <button type="button" class="btn orangeBG pull-right">Gå Vidare</button>
-              </div>
-
-              <div class="visible-sm col-sm-3"> <!-- Hidden Picture -->
-                  <img class="pull-right" alt="local" src="img/Lagpriskalender.jpg">
               </div>
           </div>
       </div>
   </div> <!-- uträknare ends -->
 
   <!-- puff holder -->
-  <div class="col-md-12">
-  <div class="hidden-xs hidden-sm panel panel-default "> 
-       <div class="panel-body greyBg ">
-           <div class="col-sm-2 col-md-4">
-               <img alt="local" src="img/Lagpriskalender.jpg">
-               <h5>Lågpriskalender</h5>
-               <p>Här hittar du de billigaste priserna till populära resmål.</p>
-               <a href="#">Hitta billiga biljetter</a>
-           </div>
-           <div class="col-sm-2 col-md-4">
-               <img alt="local" src="img/Student.jpg">
-               <h5>Student &amp; ungdom</h5>
-               <p> Sista minuten-resor från 155 kr och mycket annat. Ta tåget!</p>
-               <a href="#">Hitta Erbjudanden</a>
-           </div>
-           <div class="col-sm-2 col-md-4">
-               <img alt="local" src="img/SJBiz_man_pa_tag.jpg">
-               <h5>SJ Biz för företag</h5>
-               <p> Flexibla företagsresor med personlig service.</p>
-               <a href="#">Gå med i SJ Biiz</a>
-           </div>
-      </div>
-  </div>
+  <div class="col-md-12 hidden-xs col-sm-3 removeLeftPadding">
+               <div class="panel-body greyBg ">
+                   <div class="col-sm-2 col-md-4">
+                       <img alt="local" src="img/Lagpriskalender.jpg">
+                       <div class="hidden-sm">
+                               <h5>Lågpriskalender</h5>
+                               <p>Här hittar du de billigaste priserna till populära resmål.</p>
+                               <a href="#">Hitta billiga biljetter</a>
+                       </div>
+                   </div>
+                   <div class="col-sm-2 hidden-sm col-md-4">
+                       <img alt="local" src="img/Student.jpg">
+                       <h5>Student &amp; ungdom</h5>
+                       <p> Sista minuten-resor från 155 kr och mycket annat. Ta tåget!</p>
+                       <a href="#">Hitta Erbjudanden</a>
+                   </div>
+                   <div class="col-sm-2 hidden-sm col-md-4">
+                       <img alt="local" src="img/SJBiz_man_pa_tag.jpg">
+                       <h5>SJ Biz för företag</h5>
+                       <p> Flexibla företagsresor med personlig service.</p>
+                       <a href="#">Gå med i SJ Biiz</a>
+                   </div>
+              </div>
   </div> <!-- puff end -->
 
 <!-- reklam ================== -->
@@ -193,7 +192,7 @@
           <div class="col-xs-12" > <!-- needed since panel does weird shit-->
            <div class="panel panel-default yellowPanel">
               <div class="panel-heading">
-                      <h6 class="panel-titel"><span class="glyphicon glyphicon-exclamation-sign"></span> Aktuell information</h6>
+                      <h6 class="panel-titel">Aktuell information</h6>
               </div>
               <div class="panel-body">
                       <h5> Just nu reser extra många med SJs tåg </h5>

@@ -36,8 +36,8 @@
                           </div>
                 </div>
         </div>
-        <div class="col-xs-12 hidden-xs panel panel-default btnGroupNav"><!-- nav bar -->
-                <div class="panel-body row"> 
+        <div class="col-xs-12 panel panel-default btnGroupNav">
+                <div class="panel-body hidden-xs row"> <!-- nav bar -->
                         <div class="row"> <!-- to kill side margin -->
                                 <div class="btn-group " role="group">
                                         <button type="button" class="noborder btn btn-default">Köp Resa</button>
@@ -53,31 +53,31 @@
                                 </div>
                         </div>
                 </div>
-        </div><!-- nav bar end -->
+        </div>
 </div>
 
 <!-- main  ====================================================================================== -->
-<div class="row "> <div class="row ">  <!-- double row too kill the side margin -->
-
+<div class="row "> 
+ <div class="row ">  <!-- too kill the side margin -->
 <!-- leftSide =========================================== -->
 <div class="col-md-8"> 
-<div class="row">
-
-  <div class="col-md-12"><!-- uträknare -->
+  <!-- uträknare -->
+  <div class="panel " >  <!-- varför en panel? -->
         <ul class="nav nav-tabs nav-justified" data-tabs="tabs">
-           <li class="active">   <a data-toggle="tab" href="#menu1">Köp Resa</a></li>
-           <li>                  <a data-toggle="tab" href="#menu2">Sista Minuten</a></li>
-           <li class="hidden-xs"><a data-toggle="tab" href="#menu3">Lågpriskalender</a></li>
-           <li>                  <a data-toggle="tab" href="#menu4">Pendlar &amp; Arskort</a></li>
-           <li>                  <a data-toggle="tab" href="#menu5">Visa/Ändra resa</a></li>
+           <li class="active">   <a data-toggle="tab" href="#menu1">Home</a></li>
+           <li>                  <a data-toggle="tab" href="#menu2">Köp Resa</a></li>
+           <li>                  <a data-toggle="tab" href="#menu3">Sista Minuten</a></li>
+           <li class="hidden-xs"><a data-toggle="tab" href="#menu4">Lågpriskalender</a></li>
+           <li>                  <a data-toggle="tab" href="#menu5">Pendlar &amp; Arskort</a></li>
+           <li>                  <a data-toggle="tab" href="#menu6">Visa/Ändra resa</a></li>
         </ul>
-        <div class="tab-content greyBg col-xs-12"> 
+        <div class="tab-content greyBg "> 
            <div class="tab-pane active row" id="menu1">
-              <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-8 "> <!-- inputHolder holder --> 
+              <div class="col-xs-12 col-sm-6 col-md-8 "> <!-- inputHolder holder --> 
                   <div class="inputHolder smallMargin row form-group"> <!-- Text input -->
                      <div class="col-xs-12 col-sm-6 input" >
                            <div> 
-                                   <label for="fran"> Från</label>
+                                   <label for="fran">Från </label>
                                    <input  id="fran" type="TEXT" class="input-sm form-control" placeholder="ex Nässjö C, Hötorget T-bana"> 
                            </div>
                      </div>
@@ -87,45 +87,40 @@
                                    <input  id="till" type="TEXT" class="input-sm form-control" placeholder="ex Karlstad C, Eksjö"> 
                            </div>
                      </div>
-                  </div> 
+                  </div> <!-- Text input -->
                   <div class="row smallMargin inputHolder" >  <!-- dropdowns -->
                      <div class="col-sm-6 col-md-6">  
-                           <label for="avresa"><span class="glyphicon glyphicon-circle-arrow-right"></span> Avresa</label>
-                           <div id="avresa" >
-                                   <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
-                                       data-toggle="dropdown"> Avgång <div class="caret"></div></button>
-                                   <button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
-                                       data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
-                           </div>
+                           <span class="col-xs-12">Avresa</span>
+                           <button type="button" class="col-xs-7 btn btn-default dropdown-toggle" 
+                               data-toggle="dropdown"> Avgång <div class="caret"></div></button>
+                           <button type="button" class="col-xs-4 col-xs-offset-1 btn btn-default dropdown-toggle"
+                               data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
                      </div>
                      <div class="col-sm-6 col-md-6">  
-                           <label for="aterresa"><span class="glyphicon glyphicon-circle-arrow-left"></span> Aterresa</label>
-                           <div id="aterresa" >
-                                   <button type="button" class="col-xs-8 btn btn-default dropdown-toggle" 
-                                       data-toggle="dropdown"> Ingen <div class="caret"></div></button>
-                                   <button type="button" class="col-xs-4 btn btn-default dropdown-toggle"
-                                       data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
-                           </div>
+                           <span class="col-xs-12">Aterresa</span>
+                           <button type="button" class="col-xs-7 btn btn-default dropdown-toggle" 
+                               data-toggle="dropdown"> Ingen <div class="caret"></div></button>
+                           <button type="button" class="col-xs-4 col-xs-offset-1 btn btn-default dropdown-toggle"
+                               data-toggle="dropdown"> 11:00 <div class="caret"></div></button>
                      </div>
                  </div>
               </div> <!-- inputHolder holder --> 
 
-              <div class="hidden-xs col-sm-3 col-md-4 ">
+              <div class="hidden-xs col-sm-4 col-md-4 ">
                   <h5> Tåg Göteborg - Stockholm </h5>
                   <p>SJ kör snabbaste tågresan mellan Stockholm och Göteborg. 
                       Res med X 2000 på 2 timmar och 50 minuter.</p> 
                   <button type="button" class="btn orangeBG pull-right">Gå Vidare</button>
               </div>
 
-              <div class="visible-sm col-sm-3"> <!-- Hidden Picture -->
-                  <img class="pull-right" alt="local" src="img/Lagpriskalender.jpg">
+              <div class="visible-sm col-sm-2"> <!-- Hidden Picture -->
+                  <img class="img-responsive" alt="local" src="img/Lagpriskalender.jpg">
               </div>
           </div>
       </div>
   </div> <!-- uträknare ends -->
 
   <!-- puff holder -->
-  <div class="col-md-12">
   <div class="hidden-xs hidden-sm panel panel-default "> 
        <div class="panel-body greyBg ">
            <div class="col-sm-2 col-md-4">
@@ -147,11 +142,9 @@
                <a href="#">Gå med i SJ Biiz</a>
            </div>
       </div>
-  </div>
   </div> <!-- puff end -->
 
 <!-- reklam ================== -->
-  <div class="col-md-12">
   <div class="panel panel-default hidden-xs hidden-sm" > 
            <div class="panel-heading ">
               <h6 class="panel-titel">Erbjudanden fran SJ</h6>
@@ -176,10 +169,8 @@
                        <a href="#">Boka hotell här</a>
                    </div>
            </div>
-  </div>
   </div> <!-- reklam  end -->
 
-</div>
 </div> <!-- leftSide end-->
 
 <!-- rightSide ================================================================== -->
@@ -193,7 +184,7 @@
           <div class="col-xs-12" > <!-- needed since panel does weird shit-->
            <div class="panel panel-default yellowPanel">
               <div class="panel-heading">
-                      <h6 class="panel-titel"><span class="glyphicon glyphicon-exclamation-sign"></span> Aktuell information</h6>
+                      <h6 class="panel-titel">Aktuell information</h6>
               </div>
               <div class="panel-body">
                       <h5> Just nu reser extra många med SJs tåg </h5>

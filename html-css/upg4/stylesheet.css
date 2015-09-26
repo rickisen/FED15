@@ -1,13 +1,36 @@
+
+/* fula till det för att matcha sj.se */
 body {
 				font-size:11px!important;
         font-family: Arial,Helvetica,sans-serif!important;
 }
 
-/* fula till det för att matcha sj.se */
 * {border-radius: 0px!important;} 
 
 h5 {
         font-weight: bold!important;
+}
+/* ------ */
+
+h6 {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+}
+
+.wrapper {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        width:990px;
+}
+
+/* removes the white space at the wrappers sides */
+@media all and (max-width:991px){
+        .wrapper{
+                width:auto;
+                margin-left: none;
+                margin-right: none;
+        }
 }
 
 .maxLogoHeight {
@@ -15,7 +38,8 @@ h5 {
         margin-bottom:10px;
 }
 
-/* main button nav styling */
+
+/* main nav-bar styling */
 .btnGroupNav .panel-body{
         padding-top: 0px;
         padding-bottom: 0px;
@@ -39,31 +63,84 @@ h5 {
 }
 /* ----- */
 
-.en {
-    text-indent: -999px;
-    overflow: hidden;
-    width: 27px;
-    height: 14px;
-    float: right;
-    display: inline-block;
-    background: transparent url("../../images/front/flags_language.gif") no-repeat scroll right -15px;
+
+/* style the tabs */ 
+.nav-tabs li {
+        background: linear-gradient(white,#e0e0e0)!important;
+
+        border-width:1px 1px 0px 1px;
+        border-style: solid;
+        border-color: lightgrey;
+        border-top-left-radius:5px!important;
+        border-top-right-radius:5px!important;
 }
 
-.fatHr {
-        border-width: 5px;
-}
-
-.nav-justified li {
+.nav-tabs li {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-}
-
-.nav-justified li a {
         padding-left:  0px!important;
         padding-right: 0px!important;
 }
 
+.nav-tabs li a {
+        padding-left:  0px!important;
+        padding-right: 0px!important;
+}
+
+.tab-content {
+        border-top:3px solid #626262;
+}
+
+.nav-tabs .active {
+        border:none!important;
+}
+
+.nav-tabs .active a {
+        background: linear-gradient(#9e9e9e,#626262)!important;
+        color:white!important;
+        border-color:#626262!important;
+}
+/* -------- */
+
+
+/* Styling for the fom part and tab content */
+.tab-content {
+        margin-bottom: 15px;
+}
+.tab-content .orangeBG {
+        margin-bottom: 10px;
+        border: 1px solid red;
+}
+
+.whiteBg {
+				background-color:white;
+}
+
+.inputHolder { /* the forms */
+				background-color:white;
+        border-right:2px solid #bbbbbb;
+        border-bottom:2px solid #bbbbbb;
+        padding-bottom: 15px;
+}
+
+/* overwirtes bootstrap and 
+ * makes them smaller */ 
+.inputHolder .form-control { 
+        height: auto;
+        padding: 0px ;
+}
+
+.inputHolder .btn {
+        padding: 0px;
+        background:none;
+        text-align:left;
+        overflow: hidden;
+}
+/* ---------- */
+
+
+/* utility classes */
 .border {
         border:1px solid black;
 }
@@ -75,10 +152,6 @@ h5 {
 .noSideMargin {
         margin-left:0px!important;
         margin-right:0px!important;
-}
-
-.puff {
-        padding-top: 10px;
 }
 
 .smallPadding {
@@ -106,17 +179,36 @@ h5 {
 				background-color:#f1f1f1;
 }
 
-.whiteBg {
-				background-color:white;
+.fatHr {
+        border-width: 5px;
 }
 
-.header { }
+/* for lg */
+@media(min-width:1200px){}
+/* for md */
+@media(min-width:992px){}
+/* for sm */
+@media(min-width:768px){}
+/* for xs */
+@media(max-width:767px){}
 
-.inputHolder {
-				background-color:white;
-        border-right:2px solid #bbbbbb;
-        border-bottom:2px solid #bbbbbb;
-        padding-bottom: 15px;
+
+/* removes side padding in tabblet mode */
+@media all and (max-width:992px){
+        .removeRightPadding {padding-right:0px!important;}
+        .removeLeftPadding  {padding-left:0px!important;}
+}
+
+/* for the form /tab-content */
+/* to make them on white bg at smallest */
+@media all and (max-width:767px){
+        .greyBg {
+               background-color: white; 
+        }
+        .inputHolder {
+                border:none;
+                padding: none;
+        }
 }
 
 .orangeBG {
@@ -148,26 +240,5 @@ h5 {
 .yellowPanel hr {
         border-color:black;
 }
-
- h6 {
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-}
-
-.wrapper {
-        margin-top: 10px;
-        margin-right: auto;
-        margin-left: auto;
-        width:940px;
-}
-
 /* ------------------------ */
 
-
-@media all and (max-width:976px){
-        .wrapper{
-                width:auto;
-                margin-left: none;
-                margin-right: none;
-        }
-}
