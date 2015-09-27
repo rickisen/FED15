@@ -17,7 +17,7 @@ h5 { font-weight: bold!important;}
         margin-top: 10px;
         margin-right: auto;
         margin-left: auto;
-        width:1200px;
+        width:990px;
 }
 
 .logoHead {
@@ -195,7 +195,7 @@ h5 { font-weight: bold!important;}
 
 
 /* tablet */
-@media all and (max-width:1199px){
+@media all and (max-width:991px){
         /* removes the white space at 
          * the wrappers sides on tablet and smaller*/
         .wrapper{
@@ -221,9 +221,11 @@ h5 { font-weight: bold!important;}
         .greyBg {
                background-color: white; 
         }
-        .greyBgTab{
+
+        .greyBgTab {
                 background-color: white;
         }
+
         .inputHolder {
                 border:none;
                 padding: none;

@@ -11,22 +11,20 @@ h6 {
         margin-bottom: 0px !important;
 }
 
-h5 { font-weight: bold!important;}
+h5 {
+        font-weight: bold!important;
+}
 
 .wrapper {
         margin-top: 10px;
         margin-right: auto;
         margin-left: auto;
-        width:1200px;
+        width:990px;
 }
 
-.logoHead {
+.maxLogoHeight {
         max-height: 50px;
-        margin-bottom:5px;
-}
-
-.headObj {
-        margin-bottom:2px;
+        margin-bottom:10px;
 }
 
 
@@ -56,38 +54,46 @@ h5 { font-weight: bold!important;}
 
 
 /* style the tabs */ 
-.nav-pills li a {
+.nav-tabs li {
         background: linear-gradient(white,#e0e0e0)!important;
+
         border-width:1px 1px 0px 1px;
         border-style: solid;
         border-color: lightgrey;
         border-top-left-radius:5px!important;
         border-top-right-radius:5px!important;
-        margin: 0px 1px;
+}
 
+.nav-tabs li {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        padding-left:  0px!important;
+        padding-right: 0px!important;
 }
 
-.nav-pills {
-        border-bottom:3px solid #626262;
+.nav-tabs li a {
+        padding-left:  0px!important;
+        padding-right: 0px!important;
 }
 
-.nav-pills .active {
+.tab-content {
+        border-top:3px solid #626262;
+}
+
+.nav-tabs .active {
         border:none!important;
 }
 
-.nav-pills .active a {
+.nav-tabs .active a {
         background: linear-gradient(#9e9e9e,#626262)!important;
         color:white!important;
         border-color:#626262!important;
 }
-
 /* -------- */
 
 
-/* Styling for the form part and tab content */
+/* Styling for the fom part and tab content */
 .tab-content {
         margin-bottom: 15px;
 }
@@ -180,9 +186,6 @@ h5 { font-weight: bold!important;}
 }
 /* ------------------------ */
 
-.puff {
-        margin-bottom: 15px;
-}
 
 /* for lg */
 @media(min-width:1200px){}
@@ -193,41 +196,25 @@ h5 { font-weight: bold!important;}
 /* for xs */
 @media(max-width:767px){}
 
-
-/* tablet */
-@media all and (max-width:1199px){
-        /* removes the white space at 
-         * the wrappers sides on tablet and smaller*/
-        .wrapper{
-                width:auto;
-                margin-left: none;
-                margin-right: none;
-        }
-        /* --- */
-
-        .header .panel {
-                margin-bottom: 2px !important;
-        }
-
-        .greyBgTab {
-                background-color: #f1f1f1;
-        }
-}
-
-/* phone */
+/* for the form/tab-content */
+/* to make them on white bg at xs */
 @media all and (max-width:767px){
-        /* for the form/tab-content */
-        /* to make them on white bg at xs */
         .greyBg {
                background-color: white; 
-        }
-        .greyBgTab{
-                background-color: white;
         }
         .inputHolder {
                 border:none;
                 padding: none;
         }
-        /* -- */
-
 }
+
+/* removes the white space at 
+ * the wrappers sides on tablet and smaller*/
+@media all and (max-width:991px){
+        .wrapper{
+                width:auto;
+                margin-left: none;
+                margin-right: none;
+        }
+}
+
