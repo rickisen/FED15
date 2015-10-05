@@ -1,0 +1,35 @@
+2.	Man kan använda det objectet som en ankarpunkt för absolute element som är barn till detta
+
+3.	inline-block bryter inte raden, sa man kan ha natt brevid. Och den har en bredd
+	Dem har en inbyggd margin. sa att blir ett radbyte.
+
+4.	elementen kommer ligga utanför elementet. för att det inte finns nagon some clear:both.
+
+5.	rad 16.				ranka först efter specificity, och sen att den faktiskt stämmer. 
+		en del av dem kräver för mycket av HTML-koden
+
+7.	man skriver display:flex
+	prefixar
+	skalningsbart, lätt att bygga vidare pa. lätt att ändra pa, inga floats, lite kod.
+
+8. 	Mycket lang kod om en, tar lang tid att ladda. 	kod upprepning. även laptop-folk ändrar storlek pa fönstret. 
+
+9.	ingen förlorad information.
+	användaren har Cachad vanliga biblotek, om cdn'n används.
+
+10.	???
+	kan men bör ej.
+	alla kan det ej.
+
+11.	style i html. Daliga class-namn. postion:absolute. 
+	!important. varningstexten är ett ID. inline-block med %
+
+
+
+Att plugga pa 
+	specificity 			- 	avancerade selektorer
+	css-preprocessing
+	floats	
+	displays
+	flexbox
+

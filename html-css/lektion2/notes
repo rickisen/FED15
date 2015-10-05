@@ -26,13 +26,14 @@ positionering
 		relative 	relativ till där den annars skulle hamnat i dokumentet, den intunitiva punkten.
 		absolute	relativ till sin nämaste positionerade förälders 0x0 punkt, om ingen finns så räknas body som närmast.
 		fixed		relativ till browserns vänstra hörn oavsett scroll. klarar procent
+		static		default.
 	display
 		divs 		från början block
 		spans 		från början inline
 
-		block 		kan man alltid styla width/height
-		inline		som ord i en text. mestadels användbart i text bitar
-		inline-block	hybrid
+		block 		kan man alltid styla width/height.
+		inline		som ord i en text. mestadels användbart i text bitar, width och height har ingen betydelse
+		inline-block	hybrid, har width/height. men lägger ocksa till ett radbyte.
 		table		simulera typ som en table
 		table-row		en row
 		table-cell		en cell

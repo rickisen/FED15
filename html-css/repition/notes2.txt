@@ -1,0 +1,27 @@
+Floats 
+	upffanns för att användas pa bild texter, och da skulle man ha det pa bilden (som da var block).
+	Och da flöt texten upp. det later innehall flyta upp runnt saker. 
+	Clear nollställer sa att inget mer flyter upp. 
+
+
+box-modell
+	box-sizing:border-box;	
+
+
+seperation of concerns
+	bygg pa ett sätt sa att saker inte beror pa varandra sa mycket. 
+
+minifiering/minification
+	Inte samma sak som komprimering. Tar bort all whitespace. 
+
+ems/pixels
+	ett relativt matt. relativ till fontsizen i contextet den anvands.	
+
+avancerade css selectorer
+	[x="8"] 		attribut
+	div > h1		direkta barn
+	div + h1		direkta syskon		syskon som är brevid
+	div ~ h1		indirekta syskon	syskon som kanske har andra syskon mellan
+
+bakgrunds bilder.
+	 kan läggas inuti en div sa att man kan skriva pa den, och den flyttas liksom inte pa sig.

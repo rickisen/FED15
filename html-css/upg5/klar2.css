@@ -1,0 +1,19 @@
+.container div {
+        border: 1px solid black;
+}
+
+.container {
+        display: grid;
+        grid-template-columns:repeat(3, 100px);
+        grid-template-rows:repeat(3, 100px);
+        grid-template-areas:
+        "h h h"
+        "m m s"
+        "f f f";
+}
+
+.Header {grid-area:h; }
+.Main   {grid-area:m; }
+.Side   {grid-area:s; }
+.Footer {grid-area:f; }
+

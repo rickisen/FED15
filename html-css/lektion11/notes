@@ -1,0 +1,85 @@
+zindex / blur / mouseover ========================================================================
+
+	zindex = default 0
+	position har ett implicit z-index
+
+	minus värde? ja
+
+	filter:blur(3px);
+	-moz-
+	-webkit-
+	-ms
+	-o
+
+	box:hover{ }ändra ett element pa mouseover
+
+css - shapes ======================================================================================
+
+	formar text
+	behöver specifika flags i chrome
+
+	maste ha float och bestämd widthdth/height.
+		float:left;
+		width:;
+		height:;
+
+	polygon() 	
+		vectorer
+	inset()
+		box formad
+	syntax
+		{ shape-outside:polygon(parameter); }
+
+	exempel
+		shape-outside:circle(75px at 0 0) ritar en circle i vänstra hörnet av elementet
+
+	exempel
+		shape-outside:circle(75px at 50% 50%) ritar en circle i mitten av elementet
+
+	-webkit-clip-path:circle(75px at 0 0); beskär tex en bild till en cirkel
+
+	shape-outside, fungerar bättre än inside i browserna.
+
+hint.css ==========================================================================================
+
+	tooltips biblotek
+	Finns pa github, eller ett cdn.
+	
+	syntax
+		<span class="hint--top" data-hint="message"> Top Hint</span>
+	
+	hint-top / bottom / left			position
+	hint-error info warning sucess			colors
+	hint-bounce rounded no-animate always 		animering
+
+	
+	slippa javascript och snyggare än inbyggda tooltips.
+
+optimisering =====================================================================================
+	
+	Mindre requests
+		undvik externa scripts.
+		försök halla allt i en css
+		bygg egna share länkar
+
+	Minifiera css
+		csssimplifier.com - omcompilerar koden 
+		jscompress.com 	- minifierar bort whitespace?
+		kortare class-namn.
+		skippa jquery, skriv om till ren js.
+
+	Bilder
+		Använd svg istället för ikoner/bilder
+			ha dem direkt i css-koden
+			skalar fint
+			transkoda bilder
+
+	pageload
+		Dela upp sa at det första som behövs i en css ligger i tex headern i style tags
+		Javascript 		- sortera de viktiga funktionerna i js forst.
+		webpagetest.org  	- visar vilken ordning klasser laddas.
+
+	web-Fonts
+		Glappar i font-renderingen, jobbigt.
+		
+The End =========================================================================================

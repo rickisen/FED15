@@ -1,0 +1,122 @@
+strong {font-weight: bold;}
+body {font-size:14px;}
+td { border:1px solid darkgrey; }
+td a { white-space:nowrap; }
+
+table { 
+  border:1px solid grey; 
+  width:100%;
+  text-align:center;
+}
+ 
+.wrapper {
+  width:80%;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+ /* Header classes here */
+.header * {
+  display: inline-block;
+}
+
+.header { 
+  display: flex;
+}
+
+#leftHeader {
+}
+
+.leftHeaderImgs {
+  width:430px;
+}
+
+#middleHeader {
+  padding:2px;
+  flex-basis:30px;
+}
+
+.redBox {
+  background-color: darkred;
+  width:100%;
+  height:100%;
+}
+
+#rightHeader {
+  text-align: right;
+  font-size: 0.8em;
+}
+/* --------------- */
+
+/* puff styff */
+
+.puffholder{
+  display:flex;
+}
+
+.puff {
+  display:inline-block;
+  width:32%;
+}
+
+.puff span {
+  color:white;
+  font-size: 1.3em;
+  padding:0px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.puff p {
+  margin-top:10px;
+}
+
+/* ---------------- */
+
+/* footer */
+.footer{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+/* ------------- */
+
+/* General classes */
+.green {background-color:green;}
+.blue {background-color:blue;}
+.black {background-color:black;}
+
+.nowrap {
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.panel {
+  border:1px solid #dddddd;
+  border-radius: 2px;
+  background-color: #f1f1f1;
+  padding: 3px;
+}
+
+.button {
+  background-color: orange;
+  border-width: 2px;
+  border-style: solid;
+  border-color: yellow brown brown yellow;
+  padding:3px;
+  margin:2px;
+  font-size:1.2em;
+  overflow: hidden;
+}
+
+.marginDowner{
+  margin-bottom: 40px;
+}
+
+.floatRight {float:right;}
+.floatLeft {float:left;}
+.clearBoth {clear: both;}
+
+
+

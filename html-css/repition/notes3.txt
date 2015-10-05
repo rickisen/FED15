@@ -1,0 +1,33 @@
+flexbox
+	Använd alldrig annan positionering i en flexbox. 
+	"flex" är kort för flex-grow flex-shrink flex-basis.
+	align-items	-	flytta i riktningen som inte är flex-direction.	items blir sa stora som dem maste vara.
+	justify-content	-	flex-start
+				flex-end
+				center
+	order:		-	flyttar items till den nya ordern.
+	flex-wrap:	-	bryter rad om det behövs.
+
+media-query
+	@media all and (max-width:500px){}
+
+bootstrap.
+	linka din egen css efter bootstrap.
+
+responsiv design:
+	mobil design: server vidarebefodrar till typ m.dn.se.		- mycket kodupprepning.			- optmisierar bättre.
+	responiv design: webbläsaren tar beslut om vad som visas. 	- längre tid. behövs experter dyrare. 	- laptop människor resizar ocka, 
+														  optmisering.
+
+Framework vs Library
+	lib är mindre, enklare
+	Framweork, ett sätt att programera, maste halla sig till ett färdigt sett.
+	
+	Framework gar snabbare när man kan det. Standardisrad, enklare att hoppa in pa ett projekt.
+
+bootstrap
+	xs 	sm	md  	lg
+		768	992px	1200px
+			?
+	kollaps : fran att vara kollumner till att ta upp hela bredden.
+	col-xs-12, finns implicit i allt.  -	är det verkligen sant?

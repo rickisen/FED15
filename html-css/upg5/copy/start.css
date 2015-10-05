@@ -1,0 +1,12 @@
+.container div {
+        border: 1px solid black;
+}
+
+.container {
+}
+
+.Header { }
+.Main   { }
+.Side   { }
+.Footer { }
+
