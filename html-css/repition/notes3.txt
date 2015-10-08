@@ -28,6 +28,27 @@ Framework vs Library
 bootstrap
 	xs 	sm	md  	lg
 		768	992px	1200px
-			?
 	kollaps : fran att vara kollumner till att ta upp hela bredden.
 	col-xs-12, finns implicit i allt.  -	är det verkligen sant?
+	bra att inte vara för överanvändadnde av rows.
+	Använd bara "nopadding" classer pa löven i "trädet".
+
+preprocessing
+	sass/less/scss/stylus
+	tillater variablar och functioner och object i css.
+	$variable, $divideMe/2
+	@mixin roundedBox($variable)
+	.elementWithRoundedBox{
+		@include roundedBox(10px);
+	}
+	
+	deklarativt sprak vs dynamiskt sprak.
+		dynamiskt sprak körs 		deklarativt är uppraddning av variabler.
+		javascript/sass/php 		html/css		
+
+renderings motor
+	webkit, är motorn i safari och chrome. 
+	med ett prefix säger man typ at browsern att använda "beta-kod".
+
+css-hack
+	utnyttja en sidoeffect/bug en browser. 	-	inte bra.

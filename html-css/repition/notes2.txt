@@ -19,6 +19,7 @@ ems/pixels
 
 avancerade css selectorer
 	[x="8"] 		attribut
+	[x]			alla som har attributet "x"
 	div > h1		direkta barn
 	div + h1		direkta syskon		syskon som är brevid
 	div ~ h1		indirekta syskon	syskon som kanske har andra syskon mellan

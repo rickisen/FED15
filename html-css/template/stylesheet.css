@@ -1,0 +1,22 @@
+.abso {
+  background-color: rgba(100,0,100,0.5);
+  display: inline-block;
+  border: 1px solid red;
+  position: relative;
+  left:50px;
+  top:0px;
+  width:100px;
+
+}
+
+.clear {
+  clear:both;
+}
+
+.box {
+  width:100px;
+  height:100px;
+  background-color: red;
+  display: inline-block;
+  position: relative;
+}
