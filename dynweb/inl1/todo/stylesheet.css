@@ -1,0 +1,45 @@
+.wrapper {
+  width:80%;
+  margin:20px auto;
+}
+
+.mainWindow {
+  background-color:white;
+  box-shadow:1px 1px 3px;
+  border-radius:5px;
+}
+
+.infoz {
+  background-color: #e1e1e1;
+  margin:10px 0px;
+  padding:5px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+}
+
+.toDoItems form{
+  padding:5px;
+  background-color:#f1f1f1;
+}
+
+.toDoItems form:nth-child(2n) {
+  background-color: #e1e1e1;
+}
+
+.toDoItems input {
+  color:grey;
+  margin: 5px 10px 0px 0px;
+  display:inline;
+  border-radius: 10px;
+  border:1px solid grey;
+}
+
+.toDoItems form:last-child {
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  margin-bottom: 15px;
+}
+
+.advancedOptions .smaller { width:50px !important; }
+.advancedOptions .wide    { width:100px!important; }
+.advancedOptions .wider   { width:120px!important; }
